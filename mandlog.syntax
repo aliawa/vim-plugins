@@ -1,0 +1,13 @@
+:syntax clear
+:syntax case ignore
+
+:syntax keyword mlgSipMethod INVITE ACK BYE CANCEL PRACK UPDATE SUBSCRIBE NOTIFY PUBLISH OPTIONS INFO
+:syntax match mlgSipHdr /^[A-Za-z]*:/
+:syntax match mlgSdpHdr /^[a-z]=/
+
+
+:highlight link mlgSipMethod Type
+:highlight link mlgSipHdr Special
+:highlight link mlgSdpHdr Special
+
+
